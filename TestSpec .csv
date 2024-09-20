@@ -1,0 +1,16 @@
+TC_ID,Code Under Test,Input Scenario,Test Case Name,PreCondition/ Input,Expected Output
+TC_01,GenereateSoundex(), Empty String,GenerateSoundex_ShouldReturnEmptyString_ForEmptyInput, empty.string(),empty.string()
+TC_02,GenereateSoundex(),Single Character,GenerateSoundex_ShouldReturnThreePaddedZeroes_ForSingleCharacter,A,A000
+TC_03,GenereateSoundex(), Short Consonents,GenerateSoundex_ShouldReturnMappedCode_ForShortConsonents_PadZeroIfLessThanFour,WWW,W000
+TC_04,GenereateSoundex(), Long Consonants,GenerateSoundex_ShouldReturnMappedCode_ForLongConsonents,ABCDFGJKLMNPQRTSVWXYZ,A123
+TC_05,GenereateSoundex(), Repeating Consonants,GenerateSoundex_ShouldIgnoreRepeatedConsonents,WWWS,W600
+TC_06,GenereateSoundex(),Short Vowels,GenerateSoundex_ShouldReturnMappedCode_ForShortVowels_PadZeroIfLessThanFour,HI,H000
+TC_07,GenereateSoundex(), Long Vowels,GenerateSoundex_ShouldReturnMappedCode_ForLongVowels,AEIOUAEIOU,A330
+TC_08,GenereateSoundex(),Reapeating Vowels,GenerateSoundex_ShouldIgnoreRepeatedVowels,AAA,A000
+TC_09,GenereateSoundex(),Short Aplahbet String,GenerateSoundex_ShouldReturnMappedCode_ForShortAlphabets_PadZeroIfLessThanFour,JAM,J500
+TC_10,GenereateSoundex(), Long Aplhabet String,GenerateSoundex_ShouldReturnMappedCode_ForLongAlphabets,YOUTUBEFACEBOOKINSTAGRAM,Y331
+TC_11,GenereateSoundex(), Only Numbers,GenerateSoundex_ShouldReturnZeroesExceptFirst_ForNumbers,1234,1000
+TC_12,GenereateSoundex(),Special Characters,GenerateSoundex_ShouldReturnZeroesExceptFirst_ForSpecialCharacters,$#@&,"""$000"""
+TC_14,GenereateSoundex(),Mixed Characters,GenerateSoundex_ShouldReturnZeroesExceptAlphabetsFirstCharacter_ForMixedCharacters,G@@g!le123,G400
+TC_15,GenereateSoundex(),Characters with empty spaces,GenerateSoundex_ShouldIgnoreEmptyExceptAlphabetsFirstCharacter_ForMixedCharacters,You Tube ,Y331
+,,,,,
